@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.net.Socket;
 
-import javax.xml.crypto.Data;
-
 public class Client {
     public static void main (String [] args) throws Exception{
 
@@ -35,6 +33,7 @@ public class Client {
         } 
         bos.flush();
         bos.close();
+        fis.close();
 
         System.out.println(fname + " has been sent to server successfully");
 
